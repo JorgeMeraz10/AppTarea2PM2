@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTarea2PM2.SegundaPagina">
+
+    <StackLayout BackgroundColor="DarkBlue"> 
+        <Label Text="Información del usuario" FontSize="Title" HorizontalOptions="Center" />
+
+        <Label Text="Nombres:" />
+        <Label Text="{Binding Nombres}" />
+       
+        <Label Text="Apellidos:" />
+        <Label Text="{Binding Apellidos}" />
+        <Label Text="Edad:" />
+        <Label Text="{Binding Edad}" />
+        <Label Text="Email:" />
+        <Label Text="{Binding CorreoElectronico}" />
+    </StackLayout>
+</ContentPage>

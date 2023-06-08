@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TuProyecto"
+             x:Class="TuProyecto.Vistas.PrimeraPagina">
+    <StackLayout Padding="20">
+        <Entry Placeholder="Nombres" Text="{Binding Nombres}" />
+        <Entry Placeholder="Apellidos" Text="{Binding Apellidos}" />
+        <Entry Placeholder="Edad" Text="{Binding Edad}" Keyboard="Numeric" />
+        <Entry Placeholder="Correo" Text="{Binding Correo}" />
+        <Button Text="Enviar" Command="{Binding EnviarCommand}" />
+    </StackLayout>
+</ContentPage>

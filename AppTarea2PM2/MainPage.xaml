@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTarea2PM2.MainPage">
+
+    <StackLayout Padding="20" BackgroundColor="DarkBlue">
+        <StackLayout>
+            <Label Text="Ingrese la Informacion" FontSize="Title" HorizontalOptions="Center"/>
+            <Label Text="Nombre:" />
+            <Entry Text="{Binding Nombres}" />
+
+            <Label Text="Apellidos:" />
+            <Entry Text="{Binding Apellidos}" />
+
+            <Label Text="Edad:" />
+            <Entry Text="{Binding Edad}" />
+
+            <Label Text="Correo electrónico:" />
+            <Entry Text="{Binding CorreoElectronico}" />
+
+            <Button BackgroundColor="Aqua" Text="Enviar" Clicked="Enviar_Clicked" />
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
